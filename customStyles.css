@@ -1,0 +1,9 @@
+/* creating this style to add in buttons */
+.btn-hover:hover{
+    color: white !important;
+    background-color: #333;    
+}
+/* creating this dp-inline class style to add in input   */
+.dp-inline{
+    display: inline !important;
+}

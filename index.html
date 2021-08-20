@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-book Pro configure checkout page!</title>
+
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="customStyles.css">
+
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fav-icon link  -->
+    <link rel="shortcut icon" href="images/mac.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- main section start here -->
+    <main class="container">
+        <!-- row start here -->
+        <section class="row mt-1 g-5">
+            <!-- first column -->
+            <div class="col">
+                <div class="w-75 ms-auto">
+                    <img src="images/mac.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <!-- 2nd column  -->
+            <div class="col">
+                <!-- keeping all the different information in seperate div  -->
+                <div id="heading">
+                    <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+                </div>
+                <!-- extra memory information div  -->
+                <div class="my-4">
+                    <h5>Memory</h5>
+                    <button id="8GB-memory" class="btn border-dark btn-hover">8GB unified memory</button>
+                    <button id="16GB-memory" class="btn border-dark btn-hover">16GB unified memory</button>
+                </div>
+                <!-- extra storage information div  -->
+                <div class="my-4">
+                    <h5>Storage</h5>
+                    <button id="256GB-storage" class="btn border-dark btn-hover">256GB SSD Storage</button>
+                    <button id="512GB-storage" class="btn border-dark btn-hover">512GB SSD Storage</button>
+                    <button id="1TB-storage" class="btn border-dark btn-hover">1TB SSD Storage</button>
+                </div>
+                <!-- delivery option info div  -->
+                <div class="my-4">
+                    <h5>Choose your delivery option</h5>
+                    <button id="free-delivery" class="btn border-dark btn-hover">Friday, Aug 27 FREE Prime Delivery</button>
+                    <button id="urgent-delivery" class="btn border-dark btn-hover">Saturday, Aug 21 Delivery charge $20</button>
+                </div>
+                <!-- div of prices for extra product and total price  -->
+                <div class="my-4 mt-5 pt-2">
+                    <table class="table fw-bold">
+                        <tbody>
+                            <tr>
+                                <td>Best Price</td>
+                                <td>$1299</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Memory Cost</td>
+                                <td>$<span id="memory-cost">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Extra Storage Cost</td>
+                                <td>$<span id="storage-cost">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Charge</td>
+                                <td>$<span id="delivery-cost">0</span></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total Price</td>
+                                <td>$<span id="total-price">1299</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- promo code relevant div  -->
+                <div class="pt-2">
+                    <h6>Add Promo Code</h6>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <!-- below adding dp-inline class which is custom styled -->
+                        <input type="text" id="coupon-input" class="w-50 form-control dp-inline">
+                        <button id="coupon-apply" class="btn btn-danger">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd column end here -->
+        </section>
+        <hr class="w-75 mx-auto" style="height: 2.5px; opacity: 0.1;">
+    </main>
+    <footer class="my-4">
+        <h2 class="text-center">Total: $<span id="total-with-coupon">1299</span></h2>
+    </footer>
+
+    <!-- Javascript source link added -->
+    <script src="mac-book-pro.js"></script>
+</body>
+
+</html>
